@@ -31,6 +31,7 @@ export default {
       key: '/app/bookM', title: '书籍管理', icon: 'rocket',
       subs: [
         { key: '/app/bookM/bookLib', title: '书目库', component: 'BookLib' },
+        { key: '/app/bookM/geneM', title: '基因维护', component: 'GeneM' },
         { key: '/app/bookM/publisherM', title: '出版社维护', component: 'PublisherM' },
         { key: '/app/bookM/goodsM', title: '商品管理', component: 'GoodsM' },
       ],
@@ -170,7 +171,14 @@ export default {
       subs: [
         { key: '/app/franchiseeM/info/franinfodetail/:id', title: '加盟商查看', component: 'FranInfoDetail' },
         { key: '/app/franchiseeM/info/franmodify/:id', title: '加盟商修改', component: 'FranModify' },
-        { key: '/app/franchiseeM/info/addFranInfo', title: '加盟商新增', component: 'AddFranInfo' }
+        { key: '/app/franchiseeM/info/addFranInfo', title: '加盟商新增', component: 'AddFranInfo' },
+        { key: '/app/franchiseeM/info/addFranRank', title: '加盟商新增', component: 'AddFranRank' },
+      ]
+    },
+    {
+      key: '/app/franchiseeM/level', title: '加盟商等级',
+      subs: [
+        { key: '/app/franchiseeM/level/addFranRank', title: '加盟商新增', component: 'AddFranRank' },
       ]
     },
     // {
